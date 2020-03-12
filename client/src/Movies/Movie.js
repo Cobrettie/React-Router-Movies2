@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import MovieCard from './MovieCard';
 
 const Movie = (props) => {
   const [movie, setMovie] = useState();
@@ -29,7 +30,20 @@ const Movie = (props) => {
 
   const { title, director, metascore, stars } = movie;
   return (
-    <div className="save-wrapper">
+    <MovieCard 
+      title={title}
+      director={director}
+      metascore={metascore}
+      stars={stars} 
+    />
+  );
+}
+
+export default Movie;
+
+
+
+{/* <div className="save-wrapper">
       <div className="movie-card">
         <h2>{title}</h2>
         <div className="movie-director">
@@ -47,8 +61,4 @@ const Movie = (props) => {
         ))}
       </div>
       <div className="save-button">Save</div>
-    </div>
-  );
-}
-
-export default Movie;
+    </div> */}
