@@ -3,6 +3,7 @@ import axios from 'axios';
 import MovieCard from './MovieCard';
 
 const Movie = (props) => {
+  console.log(props)
   const [movie, setMovie] = useState();
   const id = props.match.params.id;
  
@@ -22,6 +23,11 @@ const Movie = (props) => {
   const saveMovie = () => {
     const addToSavedList = props.addToSavedList;
     addToSavedList(movie)
+  }
+
+  const removeMovie = () => {
+    const removeFromSavedList = props.removeFromSavedList;
+    removeFromSavedList(movie);
   }
 
   if (!movie) {
