@@ -3,7 +3,6 @@ import axios from 'axios';
 import MovieCard from './MovieCard';
 
 const Movie = (props) => {
-  console.log(props)
   const [movie, setMovie] = useState();
   const id = props.match.params.id;
  
