@@ -33,7 +33,6 @@ a {
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 1rem;
-  cursor: pointer;
   position: relative;
   margin: 1rem auto;
   width: 75%;
@@ -65,16 +64,27 @@ a {
   position: absolute;
   top: 25px;
   right: 25px;
-  border: 1px solid grey;
+  border: 1px solid #373737;
+  border-radius: 3px;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: dodgerblue;
+  color: #fafafa;
+  cursor: pointer;
 }
 .save-button:hover {
-  background-color: green;
-  color: white;
+  background-color: #fafafa;
+  color: dodgerblue;
 }
 
 .home-button {
   padding: 5px 10px;
-  background-color: lightskyblue;
+  border: 1px solid #373737;
+  border-radius: 3px;
+  background-color: dodgerblue;
+  color: #fafafa;
+}
+
+.home-button:hover {
+  background-color: #fafafa;
+  color: dodgerblue;
 }
