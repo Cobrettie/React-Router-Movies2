@@ -3,6 +3,7 @@ import axios from 'axios';
 import MovieCard from './MovieCard';
 
 const Movie = (props) => {
+  console.log(props)
   const [movie, setMovie] = useState();
   const id = props.match.params.id;
  
@@ -20,7 +21,7 @@ const Movie = (props) => {
   
   // Uncomment this only when you have moved on to the stretch goals
   const saveMovie = () => {
-    const addToSavedList = [];
+    const addToSavedList = props.addToSavedList;
     addToSavedList(movie)
   }
 
