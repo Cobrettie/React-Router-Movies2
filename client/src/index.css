@@ -5,6 +5,10 @@ body {
   background-color: #f2f2f2;
 }
 
+a {
+  text-decoration: none;
+}
+
 .movie-card {
   background-color: #fff;
   border: 0;
@@ -14,6 +18,8 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+  color: #373737;
+  text-decoration: none;
 }
 
 .movie-director {
@@ -38,10 +44,12 @@ body {
 
 .saved-list h3 {
   margin-right: 10px;
+  color: #373737;
 }
 
 .saved-movie {
   margin: 0 10px;
+  color: #373737;
 }
 .saved-active {
   color: blue;
